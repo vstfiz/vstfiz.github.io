@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            color: grey;
+        }
+
+        body {
+            background-color: rgb(19, 20, 21);
+            color: white;
+        }
+
+        h2 {
+            color: rgb(41, 82, 163);
+        }
+
+        .main h1 {
+            font-size: 35px;
+            text-align: center;
+            color: rgb(224, 125, 59);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.801);
+            width: 100%;
+        }
+
+        .sec-1 {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 10px;
+            margin: 10px;
+            color: gray;
+            line-height: 22px;
+
+        }
+
+        .about {
+            width: 40%;
+            text-align: justify;
+        }
+
+        .sec-1 h2 {
+            color: white;
+            text-transform: uppercase;
+            font-size: 22px;
+            margin: 5px 0;
+        }
+
+        .sec-1 ul {
+            list-style: none;
+            text-align: justify;
+        }
+
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        a:hover {
+            color: coral;
+        }
+
+        span {
+            color: gray;
+
+        }
+
+        i {
+            color: white;
+            margin-right: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .sec-2 {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin-top: 10px;
+            align-items: center;
+
+        }
+
+        .sec-2 a {
+            display: inline-block;
+            color: white;
+            background-color: red;
+            padding: 10px;
+            margin: 0px 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .sec-2 a:hover {
+            background-color: yellow;
+
+
+        }
+
+        .sec-3 ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .sec-3 ul li {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            padding: 14px;
+            background-color: rgb(95 192 96 / 80%);
+            border-radius: 50%;
+            margin: 10px;
+
+        }
+
+        .sec-3 ul li i {
+            font-size: 35px;
+            text-align: center;
+            line-height: 20px;
+        }
+
+        .sec-3 ul li:nth-child(1):hover {
+            background-color: #3b5999;
+
+        }
+
+        .sec-3 ul li:nth-child(2):hover {
+            background-color: #dd4b39;
+
+        }
+
+        .sec-3 ul li:nth-child(3):hover {
+            background-color: #0077B5;
+
+        }
+
+        .sec-3 ul li:nth-child(4):hover {
+            background-color: #55acee;
+
+        }
+
+        .sec-3 ul li:nth-child(5):hover {
+            background-color: rgb(73, 58, 58);
+
+        }
+
+        .sec-4 {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            padding: 30px;
+        }
+
+        .sec-4 p {
+            position: relative;
+        }
+
+        .sec-4 p::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            position: absolute;
+            right: 0;
+            bottom: -10px;
+            background-color: yellow;
+            transition: all 0.3s;
+
+        }
+
+        .sec-4 p:hover::after {
+            width: 100%;
+
+        }
+
+        @media(min-width:620px) and (max-width:971px) {
+
+            .sec-1 {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 10px;
+                flex-wrap: wrap;
+                margin: 10px;
+                color: gray;
+                line-height: 22px;
+
+            }
+
+            .about {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+
+        }
+
+        @media (min-width:390px) and (max-width:619px) {
+
+            .sec-1 {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                padding: 20px 10px;
+                flex-wrap: wrap;
+                margin: 10px;
+                color: gray;
+                line-height: 22px;
+
+            }
+
+            .about {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+
+        }
+
+        @media(max-width:389px) {
+
+            .sec-1 {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 10px;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin: 10px;
+                color: gray;
+                line-height: 22px;
+
+            }
+
+            .about {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .sec-3 ul {
+                display: flex;
+                list-style: none;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 20px;
+            }
+
+            .sec-3 ul li {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                padding: 10px;
+                background-color: rgb(95 192 96 / 80%);
+                border-radius: 50%;
+                margin: 10px;
+
+            }
+
+            .sec-3 ul li i {
+                font-size: 20px;
+                text-align: center;
+                line-height: 8px;
+            }
+
+
+        }
+    </style>
+    <title>Practical-13</title>
+</head>
+
+<body>
+    <section class="main">
+        <h1>Content Area</h1>
+    </section>
+    <footer>
+        <section class="sec-1">
+            <section class="about">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sequi at eius quam ipsam nihil dolores
+                    fuga, deserunt consequatur, quo ipsa illo quasi quibusdam dicta cumque animi laborum dolore
+                    laboriosam nisi alias. Pariatur temporibus eveniet numquam tempora ut deserunt error.</p>
+            </section>
+            <section class="link-1">
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">UI Design</a></li>
+                    <li><a href="#">JavaScript</a></li>
+
+                    <li><a href="#">Android</a></li>
+                </ul>
+            </section>
+            <section class="link-2">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Contribute</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </section>
+
+            <section class="link-3">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><i class="fa fa-home"></i><span>Uttar Pradesh,India</span></li>
+                    <li><i class="fa fa-envelope"></i><span>vstfiz1@gmail.com</span></li>
+                    <li><i class="fa fa-phone"></i><span>Mobile: 82XXXXXX36</span></li>
+                    <li><i class="fab fa-instagram"></i><span>Vivek Sharma</span></li>
+                </ul>
+            </section>
+        </section>
+        <hr width="100%" noshade>
+        <section class="sec-2">
+            <h2>Register Here</h2>
+            <a href="#">SignUp</a>
+        </section>
+        <hr width="100%" noshade>
+
+        <section class="sec-3">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-google"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </section>
+        <section class="sec-4">
+            <p>&copy; | Copyright All rights reserved by Vstfiz
+            </p>
+        </section>
+    </footer>
+
+</body>
+
+</html>
