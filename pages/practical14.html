@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 14</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+header h1 {
+    color: red;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Template 1 */
+
+.template-1 {
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+    margin: 20px;
+}
+
+.template-1-header {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, orange, yellow, red);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.template-1-header h1{
+    color: white;
+    font-size: 30px;
+}
+.template-1-header .social i{
+    color: rgba(19, 20, 20, 0.541);
+    padding: 10px 20px;
+    font-size: 30px;
+}
+.form-container-t1{
+    padding: 20px;
+
+}
+input[type=email]{
+    width: 100%;
+    outline: none;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+input[type=password]{
+    width: 100%;
+    outline: none;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.form-container-t1 p{
+    text-align: right;
+    font-size: 15px;
+    color: gray;
+}
+.form-container-t1 p b{
+    color: black;
+}
+input[type=submit]{
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: gray;
+    color: white;
+}
+.form-container-t1 p#p1{
+    display: inline-block;
+    text-align: right;
+    margin-left: 25px;
+}
+
+
+ /* Template 2 */
+.template-2 {
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+    margin: 20px;
+}
+.template-2-header h1{
+    color: red;
+    font-size: 30px;
+    text-align: center;
+}
+.form-container-t2{
+    padding: 20px;
+}
+.form-container-t2 input[type='submit']{
+    background-color: deeppink;
+}
+.form-container-t2 p{
+    text-align:right;
+    display: inline-block;
+    color: gray;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.form-footer-t2{
+    margin-top: 20px;
+    background-color:gray;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container-t2 p b {
+    color: turquoise;
+}
+.form-footer-t2 i{
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+
+/* Template 3 */
+
+
+.template-3 {
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+    margin: 20px;
+}
+.template-3-header h1{
+    font-size: 30px;
+    text-align: center;
+}
+.form-container-t3{
+    padding: 20px;
+}
+.form-container-t3 p#p2{
+    text-align: right;
+    color: turquoise;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+.form-container-t3 input[type=submit]{
+    background: linear-gradient(to right, rgb(36, 59, 80) , rgb(55, 148, 224));
+    width: 100%;
+}
+
+.form-container-t3 p#p3{
+    text-align: center;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.form-footer-t3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.form-footer-t3 .fab{
+    background-color: rgb(245, 241, 241);
+    color: blue;
+    border-radius: 20px;
+    padding: 10px 30px;
+    box-shadow: 0px 1px 3px blue;
+}</style>
+</head>
+
+<body>
+    <header>
+        <h1>Form Template</h1>
+    </header>
+    <div class="main-container">
+        <!-- Form Template 1 -->
+        <div class="template-1">
+            <div class="template-1-header">
+                <h1>Log in</h1>
+                <div class="social">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-google"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+            <div class="form-container-t1">
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email">
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Enter your Password">
+                </div>
+                <p>Forgot <b>Password?</b></p>
+                <input type="submit" value="LOGIN">
+                <p id="p1">Don't have an acccount <b>Signup</b>
+                </p>
+            </div>
+        </div>
+        <!-- Form Template 2 -->
+        <div class="template-2">
+            <div class="template-2-header">
+                <h1>Sign up</h1>
+
+            </div>
+            <div class="form-container-t2">
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email">
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Enter your Password">
+                </div>
+                <div>
+                    <input type="checkbox" name="checkbox" id="">
+                    <p> Accept the <b>Terms and Conditions</b></p>
+                </div>
+                <input type="submit" value="Signup">
+                <p>Have an acccount? <b>Login</b>
+                </p>
+
+            </div>
+            <div class="form-footer-t2">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-google"></i>
+                <i class="fab fa-github"></i>
+            </div>
+        </div>
+        <!-- Form Template 3 -->
+        <div class="template-3">
+            <div class="template-3-header">
+                <h1>Sign in</h1>
+
+            </div>
+            <div class="form-container-t3">
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email">
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Enter your Password">
+                </div>
+                <p id="p2">Forgot Password?</p>
+                <input type="submit" value="Sign in">
+                <p id="p3"> or Sign in with</p>
+            </div>
+            <div class="form-footer-t3">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-google"></i>
+                <i class="fab fa-github"></i>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
