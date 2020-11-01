@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Practical 15</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        #div {
+            display: flex;
+            flex: auto;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color:white;
+            font-size: 50px;
+        }
+
+        table{
+margin-left: auto;
+margin-right: auto;         
+        }
+        #minus,#plus{
+            background-color: yellow;
+            height: 45px;
+            width: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Counter</h1>
+    <table class="center">
+        <td>
+            <button disabled id="minus" onclick="minuss()"><span style="font-size: 25px;">-</span></button>
+        </td>
+        <td>
+            <p id="counter" style="margin-left: 40px;margin-right: 40px;color: yellow;font-size:40px;">0</p>
+        </td>
+
+        <td>
+            <button id="plus" onclick="plus()"><span style="font-size: 25px;">+</span></button>
+        </td>
+    </table>
+
+    <script>
+        var count = 0;
+
+        function plus() {
+            document.getElementById('counter').innerHTML = ++count;
+            document.getElementById('minus').disabled = false;
+        }
+
+        function minuss() {
+            if (count == 1) {
+                document.getElementById('counter').innerHTML = --count;
+                document.getElementById('minus').disabled = true;
+            } else {
+                document.getElementById('counter').innerHTML = --count;
+            }
+        }
+    </script>
+</body>
+
+</html>
